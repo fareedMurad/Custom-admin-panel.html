@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/custom/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header-main">
+            <div class="container-fluid nav-container pl-0">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-1 col-md-2 col-lg-2 logo-bar">
+                        <h4 class="text-center"> Logo</h4>
+                        <!-- <div class="logo"><img src="assets/images/logo.png"></div> -->
+                        <div class="nav-mob-screen">
+                            <a href="#" id="sidebarCollapse" style="z-index: 1111111">
+                                <i class="fa fa-align-justify small-screen text-white pl-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10 nav-bar">
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8">
+                            <div class="search">
+                                <form name="search-form">
+                                    <div class="input-group">
+                                        <span class="search-icon"><img src="assets/images/search.png"></span>
+                                        <input type="text" class="form-control search-input" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                        <div class="dropdown-menu search-input-width"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-arrow"></div>
+                                            <div class="list-menu-title">
+                                                <span>Shortcuts</span>
+                                            </div>
+                                            <a class="dropdown-item" href="#"> <i class="fa fa-user pr-3"></i>Create
+                                                User</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-dollar  pr-3"></i>Create
+                                                invoice</a>
+                                            <hr>
+                                            <div class="list-menu-title">
+                                                <span>In projects</span>
+                                            </div>
+                                            <div class="custom-dropdown-item">
+                                                <span class="dropdown-menu-item "><img src="assets/images/bootstrap.PNG"
+                                                        width="40">Bootstrap</span>
+                                                <span class="dropdown-menu-item-time pl-5">Just Now</span>
+                                            </div>
+                                            <div class="custom-dropdown-item">
+                                                <span class="dropdown-menu-item "><img src="assets/images/slack.PNG"
+                                                        width="40">Slack</span>
+                                                <span class="dropdown-menu-item-time pl-5">Updated 25 minutes ago</span>
+                                            </div>
+                                            <hr>
+                                            <div class="list-menu-title">
+                                                <span>Another section</span>
+                                            </div>
+                                            <div class="custom-dropdown-item">
+                                                <span class="dropdown-menu-item"><i class="fa fa-user pr-3"></i>Product
+                                                    name</span>
+                                            </div>
+                                            <hr>
+                                            <div class="custom-dropdown-item">
+                                                <a class="dropdown-show-result" href="#">Show all results</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-1 col-md-1 col-lg-4">
+                            <div class="navbar-item-wrapper">
+                                <div class="navbar-items">
+                                    <ul>
+                                        <li>
+                                            <div class="nav-menu-items">
+                                                <a role="button" id="dropdownMenuLinks" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"> <i
+                                                        class="fa fa-heartbeat"></i>
+
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLinks">
+                                                        <div class="dropdown-arrow"></div>
+                                                        <div class="nav-menu-item-title color-light-grey"> Activities
+                                                            <span>(2)</span></div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Jeffrey Wells created a
+                                                                    schedule </span>
+                                                                <span class="user-description">Just now</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Anna Vargas logged a chat
+                                                                </span>
+                                                                <span class="user-description">3 hours ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Sara Carr invited to Stilearn
+                                                                    Admin </span>
+                                                                <span class="user-description">5 hours ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Arthur Carroll updated a
+                                                                    project </span>
+                                                                <span class="user-description">1 day ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="user-all-activities">
+                                                            <a class="user-all-activities-title" href="#">All activities
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-menu-items">
+                                                <a role="button" id="dropdownMenuLinks" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"> <i
+                                                        class="fa fa-envelope-open"></i>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLinks">
+                                                        <div class="dropdown-arrow"></div>
+                                                        <div class="nav-menu-item-title color-light-grey"> Messages
+                                                            <span style="float:right;padding-right: 1rem;"> All
+                                                                read</span></div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar3.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Invitation: Joe's Dinner @ Fri
+                                                                    Aug 22 </span>
+                                                                <span class="user-description">Just now</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar3.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Final reminder: Upgrade to Pro
+                                                                </span>
+                                                                <span class="user-description">3 hours ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar3.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Live healthy with this wireless
+                                                                    sensor. </span>
+                                                                <span class="user-description">5 hours ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="nav-menu-user-activities">
+                                                            <div class="user-avatar">
+                                                                <img src="assets/images/avatar3.png" alt="">
+                                                            </div>
+                                                            <div class="user-details">
+                                                                <span class="user-name"> Need some feedback on this
+                                                                    please </span>
+                                                                <span class="user-description">6 day ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="user-all-activities">
+                                                            <a class="user-all-activities-title" href="#">All Messages
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-menu-items">
+                                                <a role="button" id="dropdownMenuLinks" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"> <i class="fa fa-th"></i>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLinks">
+                                                        <div class="dropdown-arrow"></div>
+                                                        <div class="nav-menu-sheet">
+                                                            <div class="nav-menu-sheet-item">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                                <span>Teams</span>
+                                                            </div>
+
+                                                            <div class="nav-menu-sheet-item">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                                <span>Projects</span>
+                                                            </div>
+
+                                                            <div class="nav-menu-sheet-item">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                                <span>Tasks</span>
+                                                            </div>
+
+                                                            <div class="nav-menu-sheet-item">
+                                                                <img src="assets/images/avatar.png" alt="">
+                                                                <span>Files</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="user-profile-wrapper">
+                                    <div class="navbar-user-avatar" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user-avatar">
+                                            <img src="assets/images/avatar.png" alt="">
+                                        </div>
+                                        <div class="user-details">
+                                            <span class="user-name">Beni Arshsandi</span>
+                                            <span class="user-description">markeeting manager</span>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-arrow"></div>
+                                            <a class="dropdown-item" href="#">Profile</a>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                            <hr>
+                                            <a class="dropdown-item" href="#">Help Center</a>
+                                            <a class="dropdown-item" href="#">Ask Fourm</a>
+                                            <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid pl-0">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-lg-2">
+                    <section class="aside-wrapper" id="sidebar">
+                        <div class="aside-navs-items">
+                            <div class="aside-navs-title color-light-blue">
+                                <i class="fa fa-home"></i>
+                                <span>Dashboard</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-file"></i>
+                                    <div class="aside-link-wrapper">
+                                        <a role="button" data-toggle="collapse" href="#appPages" role="button"
+                                            aria-expanded="false" aria-controls="appPages">App Pages
+                                            <span class="open-icon "> </span>
+                                        </a>
+                                        <span class="badge badge-secondary">New</span>
+                                    </div>
+                                    <ul class="collapse multi-collapse" id="appPages">
+                                        <li><a href="#">Clients</a></li>
+                                        <li><a href="#">Teams</a></li>
+                                        <li><a role="button" data-toggle="collapse" href="#team" role="button"
+                                                aria-expanded="false" aria-controls="team">Team <span class="open-icon ">
+                                                </span></a>
+                                            <ul class="collapse multi-collapse nested-items" id="team">
+                                                <li>Overview</li>
+                                                <li>Feeds</li>
+                                                <li>Projects</li>
+                                                <li>Members</li>
+                                            </ul>
+                                        </li>
+                                        <li><a role="button" data-toggle="collapse" href="#project" role="button"
+                                                aria-expanded="false" aria-controls="project">Project<span
+                                                    class="open-icon "> </span></a>
+                                            <ul class="collapse multi-collapse nested-items" id="project">
+                                                <li>Overview</li>
+                                                <li>Board</li>
+                                                <li>Gantt View</li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Calander</a></li>
+                                        <li><a role="button" data-toggle="collapse" href="#invoices" role="button"
+                                                aria-expanded="false" aria-controls="invoices">Invoices <span
+                                                    class="open-icon "> </a>
+                                            <ul class="collapse multi-collapse  nested-items" id="invoices">
+                                                <li>List</li>
+                                                <li>Details</li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Messages</a></li>
+                                        <li><a href="#">Conversations</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-wrench"></i>
+                                    <a role="button" data-toggle="collapse" href="#auth" role="button"
+                                        aria-expanded="false" aria-controls="auth">Auth <span class="open-icon "> </span>
+                                    </a>
+                                    <ul class="collapse multi-collapse" id="auth">
+                                        <li><a href="#">Comming Soon v1</a></li>
+                                        <li><a href="#">Comming Soon v2</a></li>
+                                        <li><a href="#">Cookie Consent</a></li>
+                                        <li><a href="#">Empty State</a></li>
+                                        <li><a href="#">Error Page V1</a></li>
+                                        <li><a href="#">Error Page V2</a></li>
+                                        <li><a href="#">Error Page V3</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                        <li><a href="#">Page Message</a></li>
+                                        <li><a href="#">Session Timeout</a></li>
+                                        <li><a href="#">Sign In V1</a></li>
+                                        <li><a href="#">Sign In V2</a></li>
+                                        <li><a href="#">Sign In V3</a></li>
+                                        <li><a href="#">Sign Up</a></li>
+                                        <li><a href="#">Recovery Username</a></li>
+                                        <li><a href="#">Recovery Password</a></li>
+                                        <li><a href="#">Screen Locked</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user"></i>
+                                    <a role="button" data-toggle="collapse" href="#user" role="button"
+                                        aria-expanded="false" aria-controls="user">User <span class="open-icon ">
+                                        </span></a>
+                                    <ul class="collapse multi-collapse" id="user">
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Activities</a></li>
+                                        <li><a href="#">Teams</a></li>
+                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="#">Tasks</a></li>
+                                        <li><a href="#">Profile Settings</a></li>
+                                        <li><a href="#">Account Settings</a></li>
+                                        <li><a href="#">Billing Settings</a></li>
+                                        <li><a href="#">Notification Settings</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-bookmark"></i>
+                                    <a role="button" data-toggle="collapse" href="#layouts" role="button"
+                                        aria-expanded="false" aria-controls="layouts">Layouts <span class="open-icon ">
+                                        </span></a>
+                                    <span class="badge badge-success">+4</span>
+                                    <ul class="collapse multi-collapse" id="layouts">
+                                        <li><a href="#">Blanks Page</a></li>
+                                        <li><a href="#">Header no Search</a></li>
+                                        <li><a href="#">Horizontal Menu</a></li>
+                                        <li><a href="#">Full Width</a></li>
+                                        <li><a href="#">Page Navs</a></li>
+                                        <li><a href="#">Page Cover</a></li>
+                                        <li><a href="#">Sidebar Fluid</a></li>
+                                        <li><a href="#">Sidebar Hidden</a></li>
+                                        <li><a href="#">Custom</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fa fa-braille"></i><a href="#">Landing Page</a></li>
+                            </ul>
+                        </div>
+                        <div class="aside-navs-items">
+                            <div class="aside-navs-title color-light-grey pl-4">
+                                <span>Interfaces</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-puzzle-piece"></i>
+                                    <div class="aside-link-wrapper">
+                                        <a role="button" data-toggle="collapse" href="#components" role="button"
+                                            aria-expanded="false" aria-controls="components">Components<span
+                                                class="open-icon "> </span></a>
+                                    </div>
+                                    <ul class="collapse multi-collapse" id="components">
+                                        <li><a href="#">General</a></li>
+                                        <li><a href="#">Icon</a></li>
+                                        <li><a href="#">Rich Media</a></li>
+                                        <li><a href="#">List Views</a></li>
+                                        <li><a href="#">Sortable & Nestable</a></li>
+                                        <li><a href="#">Activity</a></li>
+                                        <li><a href="#">Steps</a></li>
+                                        <li><a href="#">Tasks</a></li>
+                                        <li><a href="#">Metrics</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-pencil"></i>
+                                    <a role="button" data-toggle="collapse" href="#forms" role="button"
+                                        aria-expanded="false" aria-controls="forms">Forms<span class="open-icon ">
+                                        </span></a>
+                                    <ul class="collapse multi-collapse" id="forms">
+                                        <li><a href="#">Basic Elements</a></li>
+                                        <li><a href="#">Autocompletes</a></li>
+                                        <li><a href="#">Pickers</a></li>
+                                        <li><a href="#">Editors</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-table"></i>
+                                    <a role="button" data-toggle="collapse" href="#tables" role="button"
+                                        aria-expanded="false" aria-controls="tables">Tables<span class="open-icon ">
+                                        </span></a>
+                                    <ul class="collapse multi-collapse" id="tables">
+                                        <li><a href="#">Basic Table</a></li>
+                                        <li><a href="#">Datatables</a></li>
+                                        <li><a href="#">Responsive Datatables</a></li>
+                                        <li><a href="#">Filter Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-bar-chart"></i>
+                                    <a role="button" data-toggle="collapse" href="#collections" role="button"
+                                        aria-expanded="false" aria-controls="collections">Collections<span
+                                            class="open-icon "> </span></a>
+                                    <ul class="collapse multi-collapse" id="collections">
+                                        <li><a href="#">Chart.js</a></li>
+                                        <li><a href="#">Flot</a></li>
+                                        <li><a href="#">Inline Charts</a></li>
+                                        <li><a href="#">Vector Map</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa fa-indent"></i>
+                                    <a role="button" data-toggle="collapse" href="#levelmenu" role="button"
+                                        aria-expanded="false" aria-controls="levelmenu">Level Menu<span
+                                            class="open-icon "> </span></a>
+                                    <ul class="collapse multi-collapse" id="levelmenu">
+                                        <li><a href="#">Menu Item</a></li>
+                                        <a role="button" data-toggle="collapse" href="#menuitem" role="button"
+                                            aria-expanded="false" aria-controls="menuitem">Menu Item <span
+                                                class="open-icon "> </span></a>
+                                        <ul class="collapse multi-collapse nested-items" id="menuitem">
+                                            <li><a href="#">Child Item</a></li>
+                                            <li><a href="#">Child Item</a></li>
+                                            <li><a href="#">Child Item</a></li>
+                                        </ul>
+                                        <li><a href="#">Menu Item</a></li>
+                                        <li><a href="#">Menu Item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </section>
+                </div>
+                <div class=" col-sm-8 col-lg-10">
+                    <section class="main-content-wrapper">
+                        <div>
+                            <div class="heading">
+                                Hi Jhon...!
+                            </div>
+                            <div class="pera">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit,
+                                obcaecati.
+                            </div>
+                        </div>
+
+                        <!-- this week btn -->
+                        <div class="btn-wrapper pr-3">
+                            <div class="dropdown">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>This week</option>
+                                        <option>Today </option>
+                                        <option>Yesterday</option>
+                                        <option>This Year</option>
+                                        <option>custom</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- cards section starts here  -->
+                    <section id="cards-section">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 p-0">
+                                <div class="cards text-center align-middle">
+                                    <a href="#" class="card-anchor">
+                                        <div class="anchor-group border-right-0">
+                                            <h3 class="teams-heading">Teams</h3>
+                                            <p class="sub-heading">
+
+                                                <span><i class="fa fa-users"></i>8</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 p-0">
+                                <div class="cards text-center align-middle">
+                                    <a href="#" class="card-anchor">
+                                        <div class="anchor-group  border-right-0">
+                                            <h3 class="teams-heading">Projects</h3>
+                                            <p class="sub-heading">
+
+                                                <span><i class="fa fa-code-branch"></i>12</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 p-0">
+                                <div class="cards text-center  align-middle">
+                                    <a href="#" class="card-anchor">
+                                        <div class="anchor-group">
+                                            <h3 class="teams-heading">Active Tasks</h3>
+                                            <p class="sub-heading">
+                                                <sub></sub>
+                                                <span><i class="fa fa-tasks"></i>64</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="cards text-center  align-middle">
+                                    <a href="#" class="card-anchor">
+                                        <div class="anchor-group">
+                                            <h3 class="teams-heading">Ongoing Tasks</h3>
+                                            <p class="sub-heading">
+                                                <sub></sub>
+                                                <span><i class="fa fa-history"></i> 8</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>`
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-default mb-3">
+                                    <div class="card-header bg-transparent ">
+                                        <h6>Active Projects</h6>
+                                    </div>
+                                    <div class="card-body ">
+                                        <div class="group-items">
+                                            <a href="#" class="bg-purple">LT</a>
+                                            <a href="#" class="border-radious">
+                                                <img src="./assets/images/team4.jpg" class="circle-img" alt="">
+                                            </a>
+                                            <div>
+                                                <h6 class="m-0">Looper Admin Theme</h6>
+                                                <p class="mb-0">Progress in 74% - Last update 1d</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 74%"
+                                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="smart-paper">
+                                            <div class="group-items">
+                                                <a href="#" class="bg-blue">SP</a>
+                                                <a href="#" class="border-radious">
+                                                    <img src="./assets/images/sp.jpg" class="circle-img" alt="">
+                                                </a>
+                                                <div>
+                                                    <h6 class="m-0">Looper Admin Theme</h6>
+                                                    <p class="mb-0">Progress in 22% - Last update 1d</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" role="progressbar"
+                                                            style="width: 22%" aria-valuenow="25" aria-valuemin="0"
+                                                            aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="smart-paper">
+                                            <div class="group-items">
+                                                <a href="#" class="bg-purple bg-warning">OS</a>
+                                                <a href="#" class="border-radious">
+                                                    <img src="./assets/images/os.png" class="circle-img" alt="">
+                                                </a>
+                                                <div>
+                                                    <h6 class="m-0">Looper Admin Theme</h6>
+                                                    <p class="mb-0">Progress in 99% - Last update 1d</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                            style="width: 99%" aria-valuenow="25" aria-valuemin="0"
+                                                            aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="smart-paper">
+                                            <div class="group-items">
+                                                <a href="#" class="bg-purple bg-info">BA</a>
+                                                <a href="#" class="border-radious">
+                                                    <img src="./assets/images/team4.jpg" class="circle-img" alt="">
+                                                </a>
+                                                <div>
+                                                    <h6 class="m-0">Looper Admin Theme</h6>
+                                                    <p class="mb-0">Progress in 35% - Last update 1d</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 35%" aria-valuenow="25" aria-valuemin="0"
+                                                            aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="smart-paper">
+                                            <div class="group-items">
+                                                <a href="#" class="bg-purple bg-success">SB</a>
+                                                <a href="#" class="border-radious">
+                                                    <img src="./assets/images/sp.jpg" class="circle-img" alt="">
+                                                </a>
+                                                <div>
+                                                    <h6 class="m-0">Looper Admin Theme</h6>
+                                                    <p class="mb-0">Progress in 35% - Last update 1d</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar"
+                                                            style="width: 32%" aria-valuenow="25" aria-valuemin="0"
+                                                            aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="smart-paper pb-4">
+                                            <div class="group-items">
+                                                <a href="#" class="bg-purple bg-secondary">SP</a>
+                                                <a href="#" class="border-radious">
+                                                    <img src="./assets/images/os.png" class="circle-img" alt="">
+                                                </a>
+                                                <div>
+                                                    <h6 class="m-0">Looper Admin Theme</h6>
+                                                    <p class="mb-0">Progress in 93% - Last update 1d</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-secondary" role="progressbar"
+                                                            style="width: 93%" aria-valuenow="25" aria-valuemin="0"
+                                                            aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-default mb-3">
+                                    <div class="card-header bg-transparent ">
+                                        <h6>Active Tasks: To-Dos</h6>
+                                    </div>
+                                    <div class="card-body pb-0 ">
+                                        <h6 class="card-title">Looper Admin Theem (1/3)</h6>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox" checked> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-body pt-0 ">
+                                        <h6 class="card-title">Smart paper(1/3)</h6>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cbox3" value="third_checkbox" checked> <label
+                                                for="cbox3">
+                                                <p class="text-line-through">Lorem ipsum dolor sit.</p>
+                                            </label>
+                                        </div>
+                                        <hr>
+                                        <div class="text-center">
+                                            <a href="#" class="text-primary"> View All ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="footer-section">
+                        <div class="row">
+                            <div class="col">
+                                <footer>
+                                    <div>
+                                        <ul class="footer-ul">
+                                            <li><a href="#">support</a></li>
+                                            <li class="pl-4 pr-4"><a href="#">Help Center</a></li>
+                                            <li class=" pr-4"><a href="#">Privecy</a></li>
+                                            <li><a href="#">Terms of service</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <h6 class="footer-heading">Copyright &copy 2019. All rights reserved. </h6>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer"> </footer>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+
+</html>
